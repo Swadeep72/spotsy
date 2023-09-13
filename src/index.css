@@ -7,7 +7,6 @@ body {
 }
 
 /* Footer Css */
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -28,12 +27,30 @@ body {
   justify-content: space-around;
   background-color: transparent;
 }
-.footer-social > div > img {
-  border-radius: 50px;
-  background-color: transparent;
-  width: 35px;
-  height: 35px;
+.footer-social > div {
+  margin-top: 50px;
 }
+.footer-social > div > img {
+  background-color: transparent;
+}
+.footer-social > div > .img1 {
+  height: 23px;
+  width: 23px;
+  padding-bottom: 3px;
+  margin: 0px 5px;
+}
+.footer-social > div > .img2 {
+  height: 33px;
+  width: 33px;
+  margin: 0px 5px;
+}
+.footer-social > div > .img3 {
+  height: 22px;
+  width: 22px;
+  padding-bottom: 5px;
+  margin: 0px 5px;
+}
+
 .fb {
   margin-bottom: 20px;
   margin-left: 70px;
