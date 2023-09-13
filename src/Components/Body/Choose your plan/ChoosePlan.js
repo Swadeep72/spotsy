@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PlanBlock from "./PlanBlock";
 import data from "../../Constant";
+
 const ChoosePlan = () => {
   const [btn1, setBtn1] = useState(true);
+
   const handleMonthlyClick = () => {
     setBtn1(true);
   };
@@ -10,6 +12,7 @@ const ChoosePlan = () => {
   const handleYearlyClick = () => {
     setBtn1(false);
   };
+
   return (
     <div className="chooseplan">
       <h1>Choose Your Plan</h1>
@@ -37,6 +40,7 @@ const ChoosePlan = () => {
         <div className="plan-wrapper">
           {data.map((data) => (
             <PlanBlock
+              key={data.title}
               title={data.title}
               amount={data.amount_yearly}
               tag={data.tag}
@@ -45,7 +49,8 @@ const ChoosePlan = () => {
         </div>
       )}
       <h5>
-        Or <span>contact us</span> today for enterprise options and pricing.
+        Or <span style={{ color: "#fdb622" }}>contact us</span> today for
+        enterprise options and pricing.
       </h5>
     </div>
   );

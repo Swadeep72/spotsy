@@ -4,7 +4,7 @@ import FaqQuestions from "./FaqQuestions";
 const Faq = () => (
   <div className="faq">
     <div className="h1-p">
-      <p1>Frequently Asked Questions</p1>
+      <h1>Frequently Asked Questions</h1>
       <p>
         We are happy to help!&nbsp;<a>Contact us</a>&nbsp;today for answers.
       </p>
