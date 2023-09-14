@@ -11,7 +11,7 @@ const Footer_Social = () => {
   return (
     <div className="footer-social">
       <div style={{ display: "flex" }}>
-        <div style={{ margin: "0px 15px" }}>
+        <div style={{ margin: "0px 8px" }}>
           <GrInstagram
             style={{
               color: "#fdb622",
@@ -23,7 +23,7 @@ const Footer_Social = () => {
             onMouseLeave={() => setIsHovering(false)}
           />
         </div>
-        <div style={{ margin: "-1px 15px" }}>
+        <div style={{ margin: "-1px 8px" }}>
           <FaFacebookF
             style={{
               color: "#fdb622",
@@ -35,7 +35,7 @@ const Footer_Social = () => {
             onMouseLeave={() => setIsHovering1(false)}
           />
         </div>
-        <div style={{ margin: "-3px 15px" }}>
+        <div style={{ margin: "-4px 8px -3px 8px" }}>
           <ImLinkedin2
             style={{
               color: "#fdb622",

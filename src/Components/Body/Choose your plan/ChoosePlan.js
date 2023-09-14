@@ -14,14 +14,21 @@ const ChoosePlan = () => {
   };
 
   return (
-    <div className="chooseplan">
+    <div className="chooseplan" id="choose">
       <h1>Choose Your Plan</h1>
       <h5>No downloads. Upgrade plans or cancel anytime.</h5>
       <div>
-        <button className="btn-1" onClick={handleMonthlyClick} autoFocus>
+        <button
+          className={`btn-1${btn1 ? " active" : ""}`}
+          onClick={handleMonthlyClick}
+          autoFocus
+        >
           Monthly
         </button>
-        <button className="btn-2" onClick={handleYearlyClick}>
+        <button
+          className={`btn-2${!btn1 ? " active" : ""}`}
+          onClick={handleYearlyClick}
+        >
           Yearly
         </button>
       </div>
@@ -48,10 +55,10 @@ const ChoosePlan = () => {
           ))}
         </div>
       )}
-      <h5>
+      <h6>
         Or <span style={{ color: "#fdb622" }}>contact us</span> today for
         enterprise options and pricing.
-      </h5>
+      </h6>
     </div>
   );
 };

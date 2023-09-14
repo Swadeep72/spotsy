@@ -14,7 +14,6 @@ const Faq = () => (
         <FaqQuestions key={index} title={data} />
       ))}
     </div>
-    <div className="blank"></div>
   </div>
 );
 

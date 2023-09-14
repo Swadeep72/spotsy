@@ -7,7 +7,9 @@ const StaticHeader = () => (
         Drive growth and boost customer loyalty with your very own
         location-specific promotions and content.
       </h1>
-      <button>VIEW PLANS</button>
+      <a href="#choose">
+        <button>VIEW PLANS</button>
+      </a>
     </div>
   </div>
 );

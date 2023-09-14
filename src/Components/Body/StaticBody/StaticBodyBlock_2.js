@@ -6,10 +6,16 @@ const StaticBodyBlock_2 = (props) => (
       <h2>{props.data}</h2>
       {props.subdata
         ? props.subdata.map((data, index) => {
-            return <p key={index}>{data}</p>;
+            return (
+              <ul key={index}>
+                <li key={index}>{data}</li>
+              </ul>
+            );
           })
         : null}
-      <button>VIEW PLANS</button>
+      <a href="#choose">
+        <button>VIEW PLANS</button>
+      </a>
     </div>
     <div className="static-div">
       <img src={props.logo} />

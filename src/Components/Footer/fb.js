@@ -5,24 +5,42 @@ const Fb = ({ title, data, list }) => (
     {title ? (
       <h1
         style={{
+          marginTop: "20px",
           color: "white",
+          lineHeight: "24px",
+          fontSize: "17px",
           textAlign: "center",
-          padding: "5px",
-          fontSize: "16px",
+          fontWeight: "700",
         }}
       >
         {title}
       </h1>
     ) : null}
     {data ? (
-      <p style={{ color: "white", textAlign: "center", fontSize: "16px" }}>
+      <p
+        style={{
+          color: "white",
+          textAlign: "center",
+          fontSize: "16px",
+          lineHeight: "24px",
+        }}
+      >
         {data}
       </p>
     ) : null}
     {list
       ? list.map((data, index) => {
           return (
-            <a href="/" key={index}>
+            <a
+              style={{
+                color: "white",
+                textAlign: "center",
+                fontSize: "16px",
+                lineHeight: "24px",
+              }}
+              href="/"
+              key={index}
+            >
               {data}
             </a>
           );

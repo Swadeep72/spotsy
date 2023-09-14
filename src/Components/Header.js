@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className="header" style={{ backgroundColor: headerBackground }}>
       <a href="/">
-        <div>
+        <div className="image-h1">
           <img src={logo} alt="Logo" />
         </div>
       </a>
@@ -27,7 +27,9 @@ const Header = () => {
         <a href="/">📞 205-408-4935</a>
       ) : (
         <div className="header-button">
-          <button>VIEW PLANS</button>
+          <a href="#choose">
+            <button>VIEW PLANS</button>
+          </a>
         </div>
       )}
     </div>

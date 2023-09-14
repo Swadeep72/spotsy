@@ -21,7 +21,7 @@ const Footer_Block = () => (
     <Fb
       className="hi"
       title={"Address"}
-      list={["250 Park Avenue", "7th Floor", "New York", "NY 10177", "USA"]}
+      list={["250 Park Avenue 7th Floor", "New York", "NY 10177", "USA"]}
     />
   </div>
 );
