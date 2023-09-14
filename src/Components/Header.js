@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <div className="header" style={{ backgroundColor: headerBackground }}>
       <a href="/">
-        <div className="image-h1">
+        <div className="image">
           <img src={logo} alt="Logo" />
         </div>
       </a>
