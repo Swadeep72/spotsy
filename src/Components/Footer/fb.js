@@ -4,6 +4,7 @@ const Fb = ({ title, data, list }) => (
   <div className="fb">
     {title ? (
       <h1
+        className="h1"
         style={{
           marginTop: "20px",
           color: "white",

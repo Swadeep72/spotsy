@@ -9,7 +9,7 @@ const Body = () => {
   return (
     <>
       <StaticHeader />
-      <StaticBody />
+      {/* <StaticBody /> */}
       <ChoosePlan />
       <PlusAndPremium />
       <Faq />

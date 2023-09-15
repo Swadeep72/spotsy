@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   background-color: #1a1a1a;
   margin-top: 0px;
+  height: auto;
 }
 .footer-copyright {
   width: 100%;
@@ -123,7 +124,7 @@ body {
 .static-header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://assets.website-files.com/644012046178b75f6c95fc8b/644012046178b7130e95fcb4_spotsy-hero.png");
-  height: 740px;
+  height: auto;
   background-position: 0 0, 0 0;
   background-repeat: repeat, repeat-x;
   background-size: auto, contain;
@@ -168,7 +169,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 639px;
+  height: auto;
   width: 100%;
   margin: 0px;
   padding-bottom: 50px;
@@ -228,12 +229,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #1a1a1a;
-  height: 708px;
+  height: auto;
 }
 .plus-and-premium > .div-h1 {
   display: flex;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .plus-and-premium > .div-h1 > h1 {
   text-align: center;
@@ -251,7 +252,7 @@ body {
 .plusblock {
   width: 216px;
   height: 352px;
-  margin: 0px 69px 0px;
+  margin: 0px 69px 80px;
   display: flex;
   flex-direction: column;
 }
@@ -287,7 +288,7 @@ body {
   align-items: center;
   color: white;
   width: 100%;
-  height: 1077px;
+  height: auto;
   background-color: black;
 }
 .chooseplan > h1 {
@@ -421,6 +422,7 @@ body {
   font-size: 22px;
   text-align: center;
   font-weight: lighter;
+  margin-bottom: 120px;
 }
 
 /***************************  Static Body  ******************************/
@@ -438,6 +440,7 @@ body {
   width: 100%;
   padding: 70px 225px;
   display: flex;
+  height: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -497,6 +500,7 @@ body {
   width: 100%;
   padding: 70px 225px;
   display: flex;
+  height: auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -598,4 +602,359 @@ body {
   margin-right: 275px;
   font-size: 22px;
   color: #fdb622;
+}
+
+/************************************* Media Query **********************************/
+
+@media (max-width: 479px) {
+  /************************  Footer  ***************************/
+  .footer-copyright {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-copyright > h6 {
+    margin-bottom: 0px;
+    line-height: 24px;
+    padding: 0% 6%;
+    text-align: center;
+    color: white;
+    font-size: 12.3px;
+    font-weight: lighter;
+  }
+  .footer-block {
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .footer-block > .a1 > .input-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-block > .a1 > .input-button > input {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 50px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  .footer-block > .a1 > .input-button > button {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 16px;
+    color: white;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .fb {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /************************  Static Header  ***************************/
+
+  .static-header {
+    height: auto;
+    background-size: cover;
+    padding-top: 180px;
+  }
+  .static-header-div {
+    align-items: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .static-header-div > h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 0px;
+    padding: 0px 20px;
+  }
+  .static-header-div > a > button {
+    width: 120%;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #e50683, #fdb622);
+    /* padding: 6px 20px; */
+    margin-top: 55px;
+  }
+
+  /*************************** Faq  ******************************/
+
+  .faq {
+    height: 687px;
+    padding-bottom: 50px;
+  }
+  .h1-p > h1 {
+    font-size: 30px;
+  }
+  .h1-p > p {
+    padding-top: 16px;
+  }
+  .image-h1 {
+    margin: 0px 10px;
+    width: 100%;
+  }
+  .image-h1 > img {
+    margin-right: 5px;
+    height: 7%;
+    width: 7%;
+  }
+  .image-h1 > a {
+    margin: 15px 0px;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  /*************************** Plus and Premium ******************************/
+
+  .plus-and-premium {
+    height: auto;
+    padding: 100px 0px;
+  }
+  .plus-and-premium > .div-h1 {
+    margin-top: 0px;
+    padding: 0px 20px;
+  }
+  .plus-and-premium > .div-h1 > h1 {
+    font-size: 30px;
+  }
+  .plusblock {
+    width: 216px;
+    height: 352px;
+    margin: 0px 69px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .plusblock > h4 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .plusblock > p {
+    line-height: 24px;
+    text-align: center;
+  }
+  .plusblock > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .plusblock > div > img {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    height: 50px;
+    width: 50px;
+  }
+
+  /*************************** Choose Your Plan  ******************************/
+
+  .chooseplan > h1 {
+    font-size: 30px;
+  }
+  .chooseplan > h5 {
+    font-size: 22px;
+  }
+  .chooseplan > div > .btn-2,
+  .btn-1 {
+    width: 175px;
+  }
+
+  .plus-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: 345px;
+    height: 520px;
+    border-radius: 25px;
+    margin: 10px 10px;
+  }
+  .plus-block > h1 {
+    font-size: 38px;
+  }
+  .plus-block > h3 {
+    font-size: 28px;
+  }
+  .plus-block > button {
+    font-size: 18px;
+  }
+
+  /***************************  Header  ******************************/
+
+  /* .header {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    will-change: scroll-position;
+    transition: background-color 0.5s;
+  }
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 22px;
+  }
+  .header-button > a > button {
+    border: 0;
+    border-radius: 10px;
+    height: 45px;
+    width: 145px;
+    font-size: 17px;
+    margin-right: 0px;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #e50683, #fdb622);
+    margin-top: 23px;
+  }
+  .header-button > button:hover {
+    background-image: linear-gradient(to right, #e50683, #e50683);
+  }
+  .image > img {
+    margin-left: 0px;
+    height: 50px;
+    width: 203px;
+    margin-top: 6px;
+  }
+  .header > a {
+    text-decoration: none;
+    margin-right: 0px;
+    font-size: 22px;
+    color: #fdb622;
+  } */
+
+  /***************************  Static Body  ******************************/
+
+  .static-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(#fdb622, #f47941 55%, #e50683);
+  }
+  .static {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 70px 225px;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .static > .static-div > img {
+    width: 628px;
+    height: 728px;
+    border-radius: 15px;
+    margin-right: 110px;
+  }
+  .static > .static-data {
+    width: 628px;
+    height: 728px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    padding-right: 70px;
+  }
+  .static > .static-data > a > button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .static > .static-data > a > button:hover {
+    background-color: white;
+    color: #e50683;
+  }
+  .static > .static-data > h1 {
+    line-height: 52px;
+    margin-top: -15px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .static > .static-data > h2 {
+    font-size: 27px;
+    margin-top: 17px;
+    font-weight: lighter;
+  }
+  .static > .static-data > ul {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .static > .static-data > ul > li {
+    font-size: 22px;
+    font-weight: light;
+  }
+  .static-2 {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 70px 225px;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .static-2 > .static-div > img {
+    width: 628px;
+    height: 728px;
+    border-radius: 15px;
+    margin-right: 100px;
+    margin-left: 18px;
+  }
+  .static-2 > .static-data-2 {
+    width: 628px;
+    height: 728px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    margin-right: 80px;
+  }
+  .static-2 > .static-data-2 > a > button {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .static-2 > .static-data-2 > a > button:hover {
+    background-color: white;
+    color: #e50683;
+  }
+  .static-2 > .static-data-2 > h1 {
+    line-height: 52px;
+    margin-top: -15px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .static-2 > .static-data-2 > h2 {
+    font-size: 27px;
+    margin-top: 17px;
+    font-weight: lighter;
+  }
+  .static-2 > .static-data-2 > ul {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .static-2 > .static-data-2 > ul > li {
+    font-size: 22px;
+    font-weight: light;
+  }
 }

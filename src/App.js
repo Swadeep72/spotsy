@@ -4,7 +4,7 @@ import Header from "./Components/Header";
 
 const App = () => (
   <>
-    <Header />
+    {/* <Header /> */}
     <Body />
     <Footer />
   </>
