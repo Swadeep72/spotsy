@@ -6,10 +6,10 @@ const Fb = ({ title, data, list }) => (
       <h1
         className="h1"
         style={{
-          marginTop: "20px",
+          marginBottom: "10px",
           color: "white",
           lineHeight: "24px",
-          fontSize: "17px",
+          fontSize: "18px",
           textAlign: "center",
           fontWeight: "700",
         }}
@@ -20,6 +20,7 @@ const Fb = ({ title, data, list }) => (
     {data ? (
       <p
         style={{
+          marginBottom: "10px",
           color: "white",
           textAlign: "center",
           fontSize: "16px",

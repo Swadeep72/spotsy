@@ -9,7 +9,7 @@ const Faq = () => (
         We are happy to help!&nbsp;<a>Contact us</a>&nbsp;today for answers.
       </p>
     </div>
-    <div>
+    <div className="faq-block">
       {faq.map((data, index) => (
         <FaqQuestions key={index} title={data} />
       ))}
